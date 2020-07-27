@@ -12,6 +12,7 @@ ________________Page life Cycle_________________________________________________
           
 2.Init    1.Raised when Control is initialised
           2.get and set Controls Property 
+          3.Each control's UniqueID is set and any skin settings have been applied.
           
 3.InitComplete
           1.ViewState is not loadded
@@ -24,9 +25,23 @@ ________________Page life Cycle_________________________________________________
          1.Page is loaded
          2. all the controls loaded in the page
 6.Controls
+         1.event like Button
 7.LoadComplete
+         1.Raised at the end of the event-handling stage.
+         2.Use this event for tasks that require that all other controls on the page be loaded.
 8.PreRender
+        1.Allows final changes to the page or its control
 9.PreRenderComplete
+        1.Raised after view state and control state have been saved for the page and for all controls.
+        2.Any changes to the page or controls at this point will be ignored.
 10.SaveStateComplete
+       1.
 11.Render
+      1.This is a method of the page object and its controls (and not an event).
+      2.The Render method generates the client-side HTML, Dynamic Hypertext Markup Language (DHTML), 
+      and script that are necessary to properly display a control at the browser.
 12.Unload
+     1.This event is used for cleanup code.
+     2.At this point, all processing has occurred and it is safe to dispose of any remaining objects, including the Page object.
+     
+==============================================================================================================================================================================
