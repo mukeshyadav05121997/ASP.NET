@@ -1,0 +1,32 @@
+Introduction:
+~ASP.NET is webdevelopment technology based dot net framework by microsoft.
+~We can create Dynamic web page 
+~work on HTTP
+~controls and state management
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+________________Page life Cycle______________________________________________________________________________
+
+1.PreInit:1.Just After Page Load
+          2.IsPostback property determined
+          3.Controls Dynamic Controls
+          
+2.Init    1.Raised when Control is initialised
+          2.get and set Controls Property 
+          
+3.InitComplete
+          1.ViewState is not loadded
+          2.Make changes in viewstate
+            
+4.PreLoad
+         1.viewstate is loaded
+         2.Load the PostBack data
+5.Load
+         1.Page is loaded
+         2. all the controls loaded in the page
+6.Controls
+7.LoadComplete
+8.PreRender
+9.PreRenderComplete
+10.SaveStateComplete
+11.Render
+12.Unload
